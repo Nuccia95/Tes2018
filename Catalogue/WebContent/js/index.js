@@ -141,14 +141,17 @@ function start(){
     	  }
     	  /*DELETE LAST*/
     	  else if(transcript.includes("elimina") || transcript.includes("no")){
+    		  $('#undo').css('color','#4bff00');
     		  $('#noteList').find('li').last().remove();
+    		  $('#undo').css('color','#bebebe');
     	  }
     	  /*END*/
     	  else if(transcript.includes("ok")|| transcript.includes("fine") || transcript.includes("finito")){
     		  alert("Registrazione terminata");
     		  speechRecognizer.stop();
-    		  $('#save').css('color','');
+    		  $('#save').css('color','#4bff00');
     		  saveNote();
+    		  $('#save').css('color','#bebebe');
     		  
     	  }
        	  else{ 
