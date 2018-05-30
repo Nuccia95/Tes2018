@@ -1,0 +1,6 @@
+Hotel Aurora@review1.1 rbd-curr@Per Hotel Aurora@★★★★★@imgs/avatar/avatar1.jpeg@Servizio impeccabile e vista stupenda.. Consigliatissimo!@Written by Mario P. on Apr. 21 2018
+Hotel Eden@review1.2 rbd-next@Per Hotel Eden@★★★★@imgs/avatar/avatarX.jpg@Ottima colazione e belle camere@Written by Silvia. on Feb. 18 2018
+Hotel Miramare@review1.3@Per Hotel Miramare@★★@imgs/avatar/avatarX.jpg@ Mi ha deluso il servizio.. scorbutici alla reception!@Written by Antonella T. on Mag. 3 2018
+Hotel Cristallo@review1.4@Per Hotel Cristallo@★★★@imgs/avatar/avatar4.jpg@Promosso! Ci tornerei@Written by Paolo. on Mar. 14 2017
+Margherita Hotel@review1.5@Per Margherita Hotel@★★★★★@imgs/avatar/avatar5.jpg@Tutto bello e buono STREPITOSO@Written by Ele. on Gen. 30 2018
+Dominici Hotel@review1.6@Per Dominici Hotel@★@imgs/avatar/avatar6.jpg@Molto meglio in foto....@Written by Paolo G. on Gen. 13 2018

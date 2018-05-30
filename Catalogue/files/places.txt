@@ -1,0 +1,22 @@
+Hotel Aurora,HOTEL,Alghero,imgs/hotel/hotel1.jpg
+Hotel Eden,HOTEL,Le Bombarde,imgs/hotel/hotel3.jpg
+Hotel Miramare,HOTEL,Costa Smeralda,imgs/hotel/hotel4.jpg
+Hotel Cristallo,HOTEL,Costa Smeralda,imgs/hotel/hotel5.jpg
+Hotel Arata,HOTEL,Costa Smeralda,imgs/hotel/hotel6.jpg
+Margherita Hotel,HOTEL,Porto Cervo,imgs/hotel/hotel7.jpg
+Dominici Hotel,HOTEL,Porto Cervo,imgs/hotel/hotel8.jpg
+Maretta Hotel,HOTEL,Cagliari,imgs/hotel/hotel9.jpg
+La Baia Hotel,HOTEL,Alghero,imgs/hotel/hotel10.jpg
+Iside Hotel,HOTEL,Alghero,imgs/hotel/hotel11.jpg
+Hotel Clelia,HOTEL,San Teodoro,imgs/hotel/hotel12.jpg
+Hotel San Biagio,HOTEL,San Teodoro,imgs/hotel/hotel13.jpg
+Da Zio Mario,RISTORANTI,Alghero,imgs/restaurants/restaurant1.jpg
+La Perla,RISTORANTI,Alghero,imgs/restaurants/restaurant2.jpg
+La Scorpacciata,RISTORANTI,Le Bombarde,imgs/restaurants/restaurant3.jpg
+Il Lido,RISTORANTI,Costa Smeralda,imgs/restaurants/restaurant4.jpg
+La Fenice,RISTORANTI,Costa Smeralda,imgs/restaurants/restaurant5.jpg
+La regina del porto,RISTORANTI,Porto Cervo,imgs/restaurants/restaurant6.jpg
+Vista Mare,RISTORANTI,Porto Cervo,imgs/restaurants/restaurant7.jpg
+Da Pietro,RISTORANTI,Cagliari,imgs/restaurants/restaurant8.jpg
+La Roccia,RISTORANTI,Capo Caccia,imgs/restaurants/restaurant9.jpg
+Lo Straniero,RISTORANTI,Alghero,imgs/restaurants/restaurant10.jpg

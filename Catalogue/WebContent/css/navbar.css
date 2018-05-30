@@ -1,0 +1,45 @@
+/* NAVBAR */
+.topnav{
+	overflow: hidden;
+	background-color: #001748;
+}
+
+.topnav a{
+	font-family:'Raleway', sans-serif;
+	float: right;
+	display: block;
+	color: #ffffff;
+	text-align: center;
+	padding:3px 20px 3px;
+	margin-right:1%;
+	text-decoration: none;
+	font-size: 17px;
+	line-height: 2.8;
+    letter-spacing: -0.85px;
+}
+
+.topnav a:hover{
+	color:  #fdcd0a;
+	text-decoration:none;
+}
+
+#logoNavbar img{
+	width:40px;
+	height:40px;
+}
+
+#logoNavbar{
+	margin-left:0.8%;
+}
+
+#logoText{
+	margin-left:4.6%;
+}
+
+.logo{
+	position:absolute;
+}
+
+#space{
+	visibility:hidden;
+}

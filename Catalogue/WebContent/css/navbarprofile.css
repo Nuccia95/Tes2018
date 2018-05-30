@@ -1,0 +1,140 @@
+/*NAVBAR*/ 
+.topnav{
+	overlow:hidden;
+}
+
+#profileImage img {	
+    -moz-border-radius: 180px;
+    -webkit-border-radius: 180px;
+    border-radius: 180px;
+	position:relative;
+	width:50px;
+	height:50px;
+	margin-right:20px;
+}
+
+/****************************************/
+
+/* PROFILE PANEL */
+#profilePanel {
+	position:absolute;
+	margin-top:0.5%;
+	width: 300px;
+	right:-285px;
+	height:90%;
+	border:0.5px solid #00000061;
+	background-color:#ffffff;
+	z-index:999999;
+}
+
+#icons .material-icons{
+	font-size:20px;
+	margin-top:4%;
+}
+
+#icons #closePanel:hover{
+	color:#6f6f6f;
+}
+
+#account{
+	margin-left:3%;
+}
+
+#closePanel{
+	margin-left:77%;
+}
+
+#userProfile{
+	width:100%;
+	height:165px;
+	background-image:url("../imgs/logo/wallpaper.png");
+}
+
+#name{
+	margin-top:10px;
+	font-size:25px;
+	letter-spacing:-1.8px;
+	text-align:center;
+	color:#fff;
+}
+
+#userProfileInfo img{
+	border:10px solid #fff;
+    border-radius: 50%;
+	position:absolute;
+	width:130px;
+	height:130px;
+	margin-right:1px;
+	margin-left:30%;
+}
+
+
+/*subtitles profile panel*/
+.subtitle{
+	position:absolute;
+	font-size:18px;
+	letter-spacing:-0.8px;
+	color:#7c7c7c;
+	margin-top:15%;
+	margin-left:33%;
+}
+
+#note{
+	z-index:9999;
+	height:100%;
+}
+
+#note .material-icons{
+	color:#fff;
+}
+
+/* container note 	*/
+
+#notesTable{
+	margin-top:28%;
+}
+
+#notesTable td{
+	font-size:17px;
+	font-family:'Raleway', sans-serif;
+	color:#424242;
+    letter-spacing:-0.75px;
+    margin-bottom:2%;
+    padding:2px; 
+}
+
+#notesTable td .material-icons{
+	color:#b7b7b7;
+	padding-left:20px;
+	padding-right:20px;
+	font-size:18px;
+}
+
+#notesTable td .material-icons:hover{
+	transform:scale(1.5);
+	color:#6f6f6f;
+}
+
+#notesTable tr:hover{
+	background-color:#f1f1f1;
+}
+
+/* current opened note */
+#openedNote{
+	color:#080808de;
+	padding:3px 3px 3px 3px;
+	font-size:15px;
+	width:90%;
+	box-shadow:1px 1px 5px #000;
+	background-color:#ffff;
+	text-align:center;
+	margin-left:2%;
+}
+
+#openedNote td:hover{
+	background-color:#f1f1f1;
+}
+
+#openedNote .bookmark.material-icons{
+	color:#fdcd0a;
+}

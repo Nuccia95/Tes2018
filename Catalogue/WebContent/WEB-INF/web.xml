@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+
+	<welcome-file-list>
+		<welcome-file>cover.html</welcome-file>
+		<welcome-file>cover.html</welcome-file>
+		<welcome-file>cover.html</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<servlet>
+		<servlet-name>LoginFacebook</servlet-name>
+		<servlet-class>controller.LoginFacebook</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginFacebook</servlet-name>
+		<url-pattern>/loginFacebook</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>WriteNote</servlet-name>
+		<servlet-class>controller.WriteNote</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WriteNote</servlet-name>
+		<url-pattern>/writeNote</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SaveNote</servlet-name>
+		<servlet-class>controller.SaveNote</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SaveNote</servlet-name>
+		<url-pattern>/saveNote</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UserNotes</servlet-name>
+		<servlet-class>controller.UserNotes</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserNotes</servlet-name>
+		<url-pattern>/userNotes</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteNote</servlet-name>
+		<servlet-class>controller.DeleteNote</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteNote</servlet-name>
+		<url-pattern>/deleteNote</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LoginAgency</servlet-name>
+		<servlet-class>controller.LoginAgency</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginAgency</servlet-name>
+		<url-pattern>/loginAgency</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetCurrentCatalogue</servlet-name>
+		<servlet-class>controller.GetCurrentCatalogue</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetCurrentCatalogue</servlet-name>
+		<url-pattern>/getCurrentCatalogue</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddNoteToPlan</servlet-name>
+		<servlet-class>controller.AddNoteToPlan</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddNoteToPlan</servlet-name>
+		<url-pattern>/addNoteToPlan</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CurrentCategory</servlet-name>
+		<servlet-class>controller.CurrentCategory</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CurrentCategory</servlet-name>
+		<url-pattern>/currentCategory</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CitiesToPlan</servlet-name>
+		<servlet-class>controller.CitiesToPlan</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CitiesToPlan</servlet-name>
+		<url-pattern>/citiesToPlan</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetPlaces</servlet-name>
+		<servlet-class>controller.GetPlaces</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetPlaces</servlet-name>
+		<url-pattern>/getPlaces</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>WriteFavorites</servlet-name>
+		<servlet-class>controller.WriteFavorites</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WriteFavorites</servlet-name>
+		<url-pattern>/writeFavorites</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetNearbies</servlet-name>
+		<servlet-class>controller.GetNearbies</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetNearbies</servlet-name>
+		<url-pattern>/getNearbies</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetNearbiesPlan</servlet-name>
+		<servlet-class>controller.GetNearbiesPlan</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetNearbiesPlan</servlet-name>
+		<url-pattern>/getNearbiesPlan</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetReviews</servlet-name>
+		<servlet-class>controller.GetReviews</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetReviews</servlet-name>
+		<url-pattern>/getReviews</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>

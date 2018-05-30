@@ -1,0 +1,143 @@
+body{
+	overflow:hidden;
+}
+
+#container{
+	width:100%;
+	height:100%;
+	position:absolute;
+	background-image: url("../imgs/cover/slide1.jpg");
+}
+
+#logoText:hover{
+	color:#fff;
+}
+
+/********** home effect **********/
+*, *:after, *:before {
+   box-sizing:border-box;
+   -webkit-box-sizing: border-box;
+   -webkit-transition: all .6s ease;
+}
+
+.warmOscar {
+  text-align:center;
+  color:white;
+}
+
+.warmOscar h2 {
+  margin-top: 0;
+  font-weight: 100;
+  font-size: 2.25em;
+  -webkit-transform: translateY(150%);
+  line-height: 1em;
+}
+
+.warmOscar h2 span {
+  display:inline-block;
+  font-weight: 900;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.warmOscar p {
+  opacity: 0;
+  max-width: 80%;
+  margin:0 auto;
+  -webkit-transform: scale(.5);
+}
+
+.warmOscar .absoluteCenter {
+  width: 100%;
+  padding: 3rem;
+  /* border: 1px solid white; */
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  letter-spacing: -.025em;
+  line-height: 1.5em;
+  z-index: 1;
+}
+
+.warmOscar::before {
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height:100%;
+  background-color: rgba(0,0,0,.5);
+}
+
+.warmOscar::after {
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height:100%;
+  border: 1px solid white;
+  opacity: 0;
+  -webkit-transform: scale(.5);
+}
+
+.warmOscar:hover::before {
+  opacity: 0;
+}
+
+.warmOscar:hover::after {
+  opacity: 1;
+  -webkit-transform: scale(.8);
+  background-color: rgba(0,0,0,.3);
+}
+
+.warmOscar:hover h2 {
+  -webkit-transform: none;
+}
+
+.warmOscar:hover p {
+  opacity: 1;
+  -webkit-transform: none;
+}
+
+.absoluteCenter img{
+	width:50px;
+	height:50px;
+}
+
+/********** home effect **********/
+
+.goTo{
+	background-color:transparent;
+	font-size:15px;
+	font-family:'Roboto' sans-serif;
+	letter-spacing:2px;
+	margin-left: 49%;
+}
+
+.goTo a{
+	color:#fff;
+	text-decoration:none;
+}
+
+.goTo a:hover{
+	text-decoration:none;
+	color:#fff;
+}
+
+#createPlane:hover{
+	transform: scale(1.2); 
+}
+
+#createPlane{
+	position:absolute;
+	border:1px solid #fff;
+	padding:7px;
+	margin-top:17%;
+	margin-left:46%;
+	z-index:99999;
+}
+

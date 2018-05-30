@@ -1,0 +1,127 @@
+body{
+	overflow-x:hidden;
+	background-image:url('../imgs/cover/greybackg.png');
+}
+
+#plan{
+	width:100%;
+	height:800px;
+}
+#title{
+    font-size:30px;
+    margin-left:30%;
+    margin-top:30px;
+}
+
+
+#logo img{
+	width: 60px;
+	height: 50px;
+}
+
+.description{
+    font-size:15px;
+    letter-spacing: -0.4px;
+    color:black;
+    font-style:italic;
+}
+
+/* CONTAINER */
+#favoritesContainer{
+	z-index:;
+	position:absolute;
+    width:60%;
+    border:1px solid black;
+   	background-color:#ffff;
+   	left: 50%;
+  	margin: -0px 0 0 -400px;
+  	margin-top:20px; 
+  	padding:20px; 
+}
+
+#paper{
+	border:1px solid #e7e7e799;
+	padding:20px;
+	box-shadow: 1px 1px 3px grey;
+}
+
+.list{
+	list-style:none;
+	letter-spacing:-0.3px;
+	margin:0;
+	padding:5px;
+}
+
+.list li{
+	padding:3px;
+}
+
+.list .delete{
+	color:#c6c6c6;
+}
+
+.list .delete:hover{
+	color:#979696;
+}
+
+.subtitle{
+	color:#000082;
+}
+
+.description{
+	padding:10px;
+}
+
+#city{
+	font-style:italic;
+	color:black;
+}
+
+
+#pdf{
+	width:150px;
+	margin-left:87%;
+	margin-top:2%;
+	border:1px solid #000095;
+	padding:5px;
+	color:#fff;
+	background-color:#001748;
+}
+
+#pdf:hover{
+	transform:scale(0.9);
+}
+
+.infopanel p{
+	color:#fff;
+	font-size:20px;
+}
+
+#info{
+	position:absolute;
+	padding:25px;
+	background-color:#001748;
+	margin:2%;
+	border-radius:10px 10px 10px 10px;
+}
+
+#info label{
+	color:#fff;
+}
+
+.form-control{
+	margin:15px;
+}
+
+#calendar{
+	color:#808080e3;
+	padding:10px;
+}
+
+#submit{
+	margin-top:10%;
+	width:100px;
+	background-color:#004db8;
+	color:#fff;
+	padding:3px;
+}
