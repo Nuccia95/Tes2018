@@ -1,0 +1,44 @@
+.infopopup {
+  margin-top: 20vh;
+}
+.clear {
+  clear: both;
+}
+.popalert {
+  width: 300px;
+  height: 100px;
+  background: #12d1fe;
+  text-align: center;
+  color: #2a2a2a;
+  border-radius: 10px;
+  border: solid 2px #fefefe;
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  transform: translateY(-40px);
+  opacity: 0;
+  transition: 1s all;
+  z-index: 10;
+}
+.fa {
+  float: right;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+button {
+  width: 100px;
+  height: auto;
+  outline: none;
+  border: solid 3px #fefefe;
+  background: #12d1fe;
+  color: #2a2a2a;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: 25vh;
+  font-family: 'Roboto';
+}

@@ -49,6 +49,23 @@ $(document).ready(function() {
 
 
 /****************************************************** FUNCTIONS ******************************************************/
+function notificationPopup(message, type){
+	
+	$('.infopopup .text').html(message);
+	
+	$('.popalert').css({
+		opacity: 1,
+		"-webkit-transform":"translateY(0px)"      
+	});
+		  
+	$('.fa').click(function(){
+		$('.popalert').css({
+		opacity: 0,
+		"-webkit-transform":"translateY(-40px)" 
+		});
+	});
+}
+
 function writeTitle(){
 	$('.hidden-form').css("visibility" , "visible");
 }
@@ -84,7 +101,6 @@ function saveNote(){
 		notes.push(line);
 	})
 	
-	alert(noteName);
 	$.ajax({
 		type: "POST",
 		url: "saveNote",
@@ -97,6 +113,7 @@ function saveNote(){
 			$("#noteName input:text").val("");
 			$('.hidden-form').css("visibility" , "hidden");
 			$('#noteList').find('li').remove();
+			notificationPopup("Nota salvata correttamente", "a");
 			
 		},
 		error : function(jqXHR, exception, message ) {

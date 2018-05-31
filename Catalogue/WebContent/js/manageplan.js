@@ -126,6 +126,7 @@ function newNotification(message){
 
 /* NOTES */
 function getNotes(){
+	alert("getNotes");
 	$.ajax({
 		type : "GET",
 		url : "userNotes",

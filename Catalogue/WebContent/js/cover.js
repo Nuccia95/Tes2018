@@ -1,5 +1,4 @@
 $(document).ready(function() {	
-	
 	/*SLIDER*/
 	$("#slideshow > div:gt(0)").hide();
 
@@ -50,6 +49,8 @@ $(document).ready(function() {
 	
 });
 
+
+/*************************************************** FUNCTIONS *****************************************************************/
 /* USER LOGIN */
 function getData() {
 	FB.api('/me', 'GET', {	//get data about user
