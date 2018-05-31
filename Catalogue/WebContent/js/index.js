@@ -49,23 +49,6 @@ $(document).ready(function() {
 
 
 /****************************************************** FUNCTIONS ******************************************************/
-function notificationPopup(message, type){
-	
-	$('.infopopup .text').html(message);
-	
-	$('.popalert').css({
-		opacity: 1,
-		"-webkit-transform":"translateY(0px)"      
-	});
-		  
-	$('.fa').click(function(){
-		$('.popalert').css({
-		opacity: 0,
-		"-webkit-transform":"translateY(-40px)" 
-		});
-	});
-}
-
 function writeTitle(){
 	$('.hidden-form').css("visibility" , "visible");
 }
@@ -113,12 +96,14 @@ function saveNote(){
 			$("#noteName input:text").val("");
 			$('.hidden-form').css("visibility" , "hidden");
 			$('#noteList').find('li').remove();
-			notificationPopup("Nota salvata correttamente", "a");
-			
+			newNotification("Nota salvata correttamente");
 		},
 		error : function(jqXHR, exception, message ) {
-			if(jqXHR.responseText === "invalid name")
-				alert("Inserisci un nome alla nota");
+			if(jqXHR.responseText === "invalid name"){
+				newNotification("Inserisci un nome alla nota");
+			}else{
+				newNotification("Errore nel salvare la nota");
+			}
 		}
 	});
 }
@@ -210,5 +195,3 @@ function drop(ev) {
     var data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
 }
-
-

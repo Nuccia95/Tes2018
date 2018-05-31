@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="css/navbarprofile.css" type="text/css">
 <link rel="stylesheet" href="css/currentcategory.css" type="text/css">
 <link rel="stylesheet" href="css/reviews.css" type="text/css">
+<link rel="stylesheet" href="css/notification.css" type="text/css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <!--SCRIP-->
@@ -21,7 +22,7 @@
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/manageplan.js"></script> 
 <script type="text/javascript" src="js/currentcategory.js"></script> 
-
+<script type="text/javascript" src="js/notification.js"></script> 
 </head>
 <body>
 
@@ -29,7 +30,7 @@
 		<a href="#" id="profileImage"> <img src="${user.image}"></a> 
 		<a href="#" id="logoText" class="logo">IN TOUR</a>
 		<a href="#" id="logoNavbar" class="logo"><img src="imgs/logo/logo.png"></a>
-		<a href="home.jsp">HOME</a>
+		<a href="managePlan.jsp">HOME</a>
 		<a id="plan">IL MIO PIANO</a>
 		<a href="nearbies.jsp">NELLE VICINANZE</a>
 		<a href="catalogues.html">CATALOGHI</a> 
@@ -37,6 +38,12 @@
 
 <div id="frame" class="col-lg-2 col-md-2">
 
+   	<div id="achievement" class="">
+  		<div class="circle"></div>
+  			<div class="copy">
+    			<h4>InTour</h4><p></p>
+ 	 		</div>
+	</div>
   <div id="info" class="column side">
   
 	<div class="dropdown">

@@ -25,12 +25,14 @@ Released under the MIT license: http://jsbin.mit-license.org
 <link rel="shortcut icon" href="../favicon.ico">         
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css' />
 <link rel="stylesheet" href="css/nearbies.css">
+<link rel="stylesheet" href="css/notification.css">
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
 <!--SCRIP-->
 <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/nearbies.js"></script> 
+<script type="text/javascript" src="js/notification.js"></script> 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLwMcUzEzk4No7kNw0l-szoEms_gTR81k" type="text/javascript"></script> 
 <script>
 var map;
@@ -162,7 +164,14 @@ google.maps.event.addDomListener(window, 'load', initialize);
 		<a href="catalogues.html">CATALOGHI</a> 
 		<a href="plan.jsp">IL MIO PIANO</a> 
 	</div>
-	
+
+	<div id="achievement" class="">
+  		<div class="circle"></div>
+  			<div class="copy">
+    			<h4>InTour</h4>
+    		<p></p>
+ 	 		</div>
+	</div>	
  	
  	<div id="map-canvas"></div>
  	<div id="street-view"></div>
@@ -170,7 +179,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
  	
  <div id="content-pane">
 
-     	
+	
 			<label>DA</label><input  type="text" name="source" id="source"/>
 			<label>A</label><input type="text" name="dest" id="dest"  />
 
@@ -196,9 +205,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 			</thead>
 				<tbody>
 					<tr>
-						<td><i  id="distance" class="material-icons" data-toggle="tooltip" data-placement="top" title="Calcola distanza" onclick="calculateDistances();">timeline</i>
-						<td><i  id="add"      class="material-icons" data-toggle="tooltip" data-placement="top" title="Aggiungi al tuo piano">add_location</i>
-						<td><i  id="saveall"  class="material-icons" data-toggle="tooltip" data-placement="top" title="Salva tutto">done_all</i></td>
+						<td><a href="#" id="distance" data-toggle="tooltip" data-placement="top" title="Calcola distanza" onclick="calculateDistances();">DISTANZA</a>
+						<td><a href="#" id="add"  	  data-toggle="tooltip" data-placement="top" title="Aggiungi al tuo piano">AGGIUNGI AL TUO PIANO</a>
+						<td><a href="#" id="saveall"  data-toggle="tooltip" data-placement="top" title="Salva tutto">SALVA TUTTO</a></td>
 					</tr>
 				</tbody>
 		</table>
@@ -211,12 +220,12 @@ google.maps.event.addDomListener(window, 'load', initialize);
 		
 		<div id="addcity"></div>
 		</div>
+		
+</div>
 		<div id="nearbies"> 
 			
 		</div>
-</div>
-  
-		
+ 
 
 
 <!--  <script src="http://static.jsbin.com/js/render/edit.js?4.1.4"></script>

@@ -28,7 +28,7 @@
 <script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
 <script type="text/javascript" src="js/manageplan.js"></script>
 <script type="text/javascript" src="js/steps.js"></script> 
-
+<script type="text/javascript" src="js/notification.js"></script> 
 </head>
 <body>
 

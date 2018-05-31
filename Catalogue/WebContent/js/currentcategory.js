@@ -8,7 +8,7 @@ $(document).ready(function() {
 		var div = x[slideIndex];
 		var idPlace = $(div).attr('id');
 		userfavorites.push(idPlace);
-		alert("Aggiunto al tuo piano");
+		newNotification("Aggiunto al tuo piano");
 	});
 	
 	$('#saveAll').on('click',function(e){
@@ -19,7 +19,7 @@ $(document).ready(function() {
 				favorites : JSON.stringify(userfavorites),
 			},
 			success : function(data) {	
-				alert("Contenuti Salvati");
+				newNotification("Contenuti salvati correttamente");
 			},
 			error : function(data) {	
 

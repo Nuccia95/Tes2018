@@ -30,7 +30,7 @@ See https://github.com/adobe-type-tools/cmap-resources
 <link rel="icon" href="imgs/logo/logo.png"/>
 <link rel="stylesheet" href="pdfjs/viewer.css"/>
 <link rel="stylesheet" href="pdfjs/pdf-flip.css"/>
-<link rel="stylesheet" href="popup.css"/>
+<link rel="stylesheet" href="css/notification.css" type="text/css">
 <style>
         .se-pre-con {
             position: fixed;
@@ -56,7 +56,7 @@ See https://github.com/adobe-type-tools/cmap-resources
 <script src="pdfjs/viewer.js"></script>
 <script src="pdfjs/pdf-flip.js"></script>
 <script src="js/index.js"></script>
-
+<script src="js/notification.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         PdfFlip.init();
@@ -99,12 +99,13 @@ See https://github.com/adobe-type-tools/cmap-resources
             </div>
         </div>
 
-<div class="infopopup">
-  <div class="popalert"><i class="fa fa-times-circle" aria-hidden="true"></i>
-    <div class="clear"></div>
-    <div class="text"></div>
-  </div>
-</div>
+	<div id="achievement" class="">
+  		<div class="circle"></div>
+  			<div class="copy">
+    			<h4>InTour</h4><p></p>
+ 	 		</div>
+	</div>
+
 
 <div class="instructions">
   		<div class="panel-toggle">
@@ -125,10 +126,10 @@ See https://github.com/adobe-type-tools/cmap-resources
     	</p>
   		</div>
 	</div>
-         
+	     
        	<div id="userNote" class="l">
 		<div id="titl">
-			<p>NOTEs</p>
+			<span>NOTEs</span>
 		</div>
 			<div class="optionsUp row">
 				<table>

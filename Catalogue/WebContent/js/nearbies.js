@@ -5,7 +5,7 @@ $(document).ready(function() {
 	$('#add').on('click',function(e){
 		var cityname = $('#addcity').find('#cityname').find('strong').text();
 		favorites.push(cityname);
-		alert("Hai aggiunto "+cityname);
+		newNotification("Hai aggiunto "+cityname);
 	});
 	
 	$('#saveall').on('click',function(e){
@@ -16,7 +16,7 @@ $(document).ready(function() {
 				favorites : JSON.stringify(favorites),
 			},
 			success : function(data) {		
-				alert("Contenuti Salvati");
+				newNotification("Tutte le tue città sono state salvate");
 			},
 			error : function(data) {	
 			}
@@ -41,8 +41,3 @@ function getNearbies(){
 	});
 	
 }
-
-
-
-
-
