@@ -27,11 +27,9 @@ $(document).ready(function() {
 		});
 	});
 	
-	
-	$('#plan').on('click',function(){
-		window.location.assign("plan.jsp");
-	});
 });
+
+/************************************************ FUNCTIONS ******************************************************************/
 
 function getPlaces(categoryPlace){
 	$.ajax({
@@ -104,3 +102,6 @@ function getReview(){
 		}
 	});
 }
+
+
+

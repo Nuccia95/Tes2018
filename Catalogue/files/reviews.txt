@@ -1,6 +1,15 @@
-Hotel Aurora@review1.1 rbd-curr@Per Hotel Aurora@★★★★★@imgs/avatar/avatar1.jpeg@Servizio impeccabile e vista stupenda.. Consigliatissimo!@Written by Mario P. on Apr. 21 2018
-Hotel Eden@review1.2 rbd-next@Per Hotel Eden@★★★★@imgs/avatar/avatarX.jpg@Ottima colazione e belle camere@Written by Silvia. on Feb. 18 2018
+Hotel Aurora@review1.1@Per Hotel Aurora@★★★★★@imgs/avatar/avatar1.jpeg@Servizio impeccabile e vista stupenda.. Consigliatissimo!@Written by Mario P. on Apr. 21 2018
+Hotel Eden@review1.2@Per Hotel Eden@★★★★@imgs/avatar/avatarX.jpg@Ottima colazione e belle camere@Written by Silvia. on Feb. 18 2018
 Hotel Miramare@review1.3@Per Hotel Miramare@★★@imgs/avatar/avatarX.jpg@ Mi ha deluso il servizio.. scorbutici alla reception!@Written by Antonella T. on Mag. 3 2018
 Hotel Cristallo@review1.4@Per Hotel Cristallo@★★★@imgs/avatar/avatar4.jpg@Promosso! Ci tornerei@Written by Paolo. on Mar. 14 2017
 Margherita Hotel@review1.5@Per Margherita Hotel@★★★★★@imgs/avatar/avatar5.jpg@Tutto bello e buono STREPITOSO@Written by Ele. on Gen. 30 2018
-Dominici Hotel@review1.6@Per Dominici Hotel@★@imgs/avatar/avatar6.jpg@Molto meglio in foto....@Written by Paolo G. on Gen. 13 2018
+Dominici Hotel@review1.6@Per Dominici Hotel@★★@imgs/avatar/avatar6.jpg@Molto meglio in foto....@Written by Lino G. on Gen. 13 2018
+La Baia Hotel@review1.7@La Baia Hotel@★★★★★@imgs/avatar/avatar2.jpg@Ottimo, vista mozzafiato, un pochino meno per il portafoglio@Written by Sonia G. on Apr. 6 2018
+Iside Hotel@review1.8@Per Iside Hotel@★@imgs/avatar/avatarY.jpg@Personale scorbutico. Soprattutto la signorina della reception!!!@Written by Leonardo. on Dic. 2 2017
+Da Zio Mario@review1.9@Per Zio Mario@★★★★★@imgs/avatar/avatar7.jpg@UNICO COME SEMPREeeee!@Written by Jess on Ago. 12 2017
+La Perla@review1.10@Per La Perla Ristorante@★★★★@imgs/avatar/avatar8.jpg@Elegance, lovo u@Written by Sarah J. on Mag. 13 2018
+La Scorpacciata@review1.11@Per Dominici Hotel@★★★★★@imgs/avatar/avatar9.jpg@Gustoso 11 e lode!!@Written by Chiara. on Sett. 5 2017
+Il Lido@review1.12@Per Il Lido Ristorante@★@imgs/avatar/avatar10.jpg@Dunque pensavo meglio, maccheroni salatissimi. PER ME E' UN NO.@Written by Augusta P. on Apr. 17 2018
+La Fenice@review1.13@Per La Fenice Ristorante@★★★★@imgs/avatar/avatar11.jpg@Ottimo cibo, ottimo prezzo, vino da favola.@Written by Andrea on Giu. 1 2018
+La regina del porto@review1.14@Per La regina Ristorante@★★★★★@imgs/avatar/avatar13.jpg@La Regina in tutto e per tutto 10 e lode.@Written by Erika on Gen. 3 2018
+Vista Mare@review1.15@Per Vista Mare Ristorante@★★★★@imgs/avatar/avatar12.jpg@Love it.@Written by Mihary Y. on Mar. 1 2018

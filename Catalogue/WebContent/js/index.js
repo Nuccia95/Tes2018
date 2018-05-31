@@ -110,13 +110,13 @@ function saveNote(){
 
 /* MIC */
 function start(){
+	$('#mic').css('color','#4bff00');
 	if("webkitSpeechRecognition" in window){
     var speechRecognizer = new webkitSpeechRecognition();
     speechRecognizer.continuous = true;
     speechRecognizer.lang = "it-IT";    
     speechRecognizer.start();
     var title = false;
-    
     var finalTranscripts = "";
     speechRecognizer.onresult = function(event){
     	  // event is a SpeechRecognitionEvent object.
@@ -143,18 +143,14 @@ function start(){
     	  }
     	  /*DELETE LAST*/
     	  else if(transcript.includes("elimina") || transcript.includes("no")){
-    		  $('#undo').css('color','#4bff00');
     		  $('#noteList').find('li').last().remove();
-    		  $('#undo').css('color','#bebebe');
     	  }
     	  /*END*/
     	  else if(transcript.includes("ok")|| transcript.includes("fine") || transcript.includes("finito")){
-    		  alert("Registrazione terminata");
+    		  newNotification("Ascolto terminato");
+    		  $('#mic').css('color','#bebebe');
     		  speechRecognizer.stop();
-    		  $('#save').css('color','#4bff00');
-    		  saveNote();
-    		  $('#save').css('color','#bebebe');
-    		  
+    		  saveNote();		  
     	  }
        	  else{ 
     		  transcript = transcript.replace(' ', '');

@@ -13,8 +13,8 @@
 <link rel="stylesheet" href="css/navbar.css" type="text/css">
 <link rel="stylesheet" href="css/navbarprofile.css" type="text/css">
 <link rel="stylesheet" href="css/currentcategory.css" type="text/css">
-<link rel="stylesheet" href="css/reviews.css" type="text/css">
 <link rel="stylesheet" href="css/notification.css" type="text/css">
+<link rel="stylesheet" href="css/scrollbar.css" type="text/css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <!--SCRIP-->
@@ -27,11 +27,11 @@
 <body>
 
 	<div class="topnav">
-		<a href="#" id="profileImage"> <img src="${user.image}"></a> 
+		<a id="profileImage"> <img src="${user.image}"></a> 
 		<a href="#" id="logoText" class="logo">IN TOUR</a>
 		<a href="#" id="logoNavbar" class="logo"><img src="imgs/logo/logo.png"></a>
 		<a href="managePlan.jsp">HOME</a>
-		<a id="plan">IL MIO PIANO</a>
+		<a href="plan.jsp">IL MIO PIANO</a>
 		<a href="nearbies.jsp">NELLE VICINANZE</a>
 		<a href="catalogues.html">CATALOGHI</a> 
 	</div>
@@ -70,66 +70,18 @@
 	</div>
 	
 	<div id="titleOpinions"><label>Impressioni</label></div>
+		
 	<div id="opinions" class="column side">
-		<div class="rbd-core-ui">
-			<div class="rbd-review-slider">
-				<div class="rbd-review-container"></div>		
-			</div>	
-		</div>
-	</div>
-	
-</div> 
-<script type="text/javascript">
-	let options = {
-			'speed': 4000,
-			'pause': true,
-		}
+			<ul class="rbd-review-container"></ul>		
+	</div> 
 
-	$(document).ready(function(){
-			let slider = document.querySelector('.rbd-review-slider');
-			let slides = slider.querySelectorAll('.rbd-review');
-			let total  = slides.length;
-			let pause  = false;
-			
-			function pauseSlide(){
-				slider.onmouseleave = function(){ pause = false; };
-				slider.onmouseenter = function(){ pause = true; };
-				return pause;
-			}
-			
-			function slide(){
-				if( options.pause && pauseSlide() ) return;
-				
-				let activeSlide = document.querySelector('.rbd-review-slider .rbd-review.rbd-curr');
-				let prev, curr, next, soon;		
-				
-				curr = activeSlide;
-				prev = activeSlide.previousElementSibling;
-				next = activeSlide.nextElementSibling;
-				
-				if( next != null ){
-					soon = next.nextElementSibling == null ? slides[0] : next.nextElementSibling;
-				} else {
-					next = slides[0];
-					soon = slides[1];
-				}
-				
-				if( prev != null ) prev.classList.remove('rbd-prev', 'rbd-curr', 'rbd-next');
-				if( curr != null ) curr.classList.remove('rbd-prev', 'rbd-curr', 'rbd-next'); curr.classList.add('rbd-prev');
-				if( next != null ) next.classList.remove('rbd-prev', 'rbd-curr', 'rbd-next'); next.classList.add('rbd-curr');
-				if( soon != null ) soon.classList.remove('rbd-prev', 'rbd-curr', 'rbd-next'); soon.classList.add('rbd-next');
-			}
-			
-			let slideTimer = setInterval(function(){
-				slide();
-			}, options.speed);
-		}, true);
-</script> 
+</div> 
+
 	</div>
 	
   <div id="title">	<h1> ${currentCategory} NELLE TUE CITTÁ</h1> 
-  		<div id="opt">Cosa vuoi fare?<a id="like" class="material-icons" data-toggle="tooltip" data-placement="top" title="Aggiungi al tuo piano">add</a>  
-  			<a id="saveAll" class="material-icons" data-toggle="tooltip" data-placement="top" title="Salva tutto">done_all</a></div> 
+  		<div id="opt">Cosa vuoi fare?<a  href='#' id="like" class="material-icons" data-toggle="tooltip" data-placement="top" title="Aggiungi al tuo piano">add</a>  
+  			<a href='#' id="saveAll" class="material-icons" data-toggle="tooltip" data-placement="top" title="Salva tutto">done_all</a></div> 
   </div>
   
   <div id="container" class="column middle">
