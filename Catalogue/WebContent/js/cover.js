@@ -40,7 +40,7 @@ $(document).ready(function() {
 	
 	$("#fbButton").on('click', function() {
 		FB.login(function(response) {
-		}, { scope : 'user_friends, email', return_scopes:true });
+		}, { scope : 'public_profile, email', return_scopes:true });
 	},false);
 
 	$('#enterAsUser').on('click',function(){

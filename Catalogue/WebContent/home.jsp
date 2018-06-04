@@ -16,7 +16,6 @@
 <link rel="stylesheet" href="css/navbarprofile.css" type="text/css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="css/home.css" type="text/css">
-<link rel="stylesheet" href="css/scrollbar.css" type="text/css">
 <link rel="stylesheet" href="css/steps.css" type="text/css">
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
