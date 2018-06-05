@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	getFavorites();
+	getFavoritesNearbies();
 
 	$('#edit').on('click',function(){
 		$('.editMenu').css('left','0%');
@@ -87,3 +88,28 @@ function getFavorites(){
 		
 	});
 }
+
+function getFavoritesNearbies(){
+
+	$.ajax({
+		type : "GET",
+		url : "getNearbiesPlan",
+		success : function(data) {	
+			$('#nearbies').html(data);
+			
+			$(".delete").on('click', function(e) {
+				e.stopPropagation();
+				$(this).closest('li').remove();
+			});
+		},
+		error : function(data) {	
+			alert("error in getNearbiesPlan");
+		}
+		
+	});
+}
+
+
+
+
+

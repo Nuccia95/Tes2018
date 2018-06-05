@@ -101,6 +101,7 @@ function getNotes(){
 				var row = $(this).closest('tr');
 				var id = row.attr('id');
 				var noteName = row.find("td:first").text();
+				cleanPlan();
 				addToPlane(id);
 				newNotification("Hai aggiunto la nota "+noteName+" passa allo step <strong>ISPIRAMI</strong>")
 			});
@@ -174,6 +175,19 @@ function addToPlane(id){
 		error : function(data) {	
 		}
 	});
+}
+
+function cleanPlan(){
+	$.ajax({
+		type : "POST",
+		url : "cleanPlan",
+		success : function(data) {	
+		},
+		error : function(data) {	
+		}
+	});
+	
+	
 }
 
 

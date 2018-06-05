@@ -79,9 +79,7 @@
 		<div id="title">
 			<span style="color:#001748"><strong>IN TOUR</strong></span>
 		</div>
-		<div class="description"><span>Ti auguriamo che la tua vacanza ideale si svolga nel miglior dei modi.
-			Buon viaggio ${user.firstName}!</span></div>
-			
+		<div id="" class="description"><span>Ti auguriamo che la tua vacanza ideale si svolga nel miglior dei modi.</span></div>
 		
 		<div id="calendar"></div>
 			
@@ -91,13 +89,7 @@
 		
 		<div class="subtitle"><strong>INTERESSI NELLE VICINANZE</strong></div>
 		<ul id="nearbies" class="list">
-			<c:forEach var="nearby" items="${nearbiesFavorites}">
-				<li>	
-					<span>${nearby}</span> 					 
-					<span class="float-right delete">x</span>
-				</li>
-			</c:forEach>
-			
+	
 		</ul>
 		</div>
 	</div>		

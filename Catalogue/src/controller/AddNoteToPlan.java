@@ -22,11 +22,10 @@ public class AddNoteToPlan extends HttpServlet {
 			
 		String idNote = req.getParameter("id");
 		Long id = Long.parseLong(idNote);
-		req.getSession().setAttribute("currentNoteInPlan", id);
-
-		Note note = DaoFactory.getInstance().makeNoteDao().getByPrimaryKey(id);
 		
-		/* Put in session information about current Note */
+		/* Put in session information about current Note, the notePlan */
+		req.getSession().setAttribute("currentNoteInPlan", id);
+		Note note = DaoFactory.getInstance().makeNoteDao().getByPrimaryKey(id);
 		req.getSession().setAttribute("currentNoteName", note.getName());
 		req.getSession().setAttribute("currentCities", note.getNotes());
 		
@@ -34,6 +33,6 @@ public class AddNoteToPlan extends HttpServlet {
 		req.setAttribute("name", note.getName());
 		req.setAttribute("cities", note.getNotes());
 		req.getRequestDispatcher("addNoteToPlan.jsp").forward(req,resp);
-	}
+	}		
 	
 }

@@ -64,6 +64,18 @@
  	line-height: 1;
 }
 
+.material-icons{
+	font-size:20px;
+}
+
+.login img{
+	width:43px;
+	height:40px;
+}
+
+.login{
+	padding-left:0px !important;
+}
 
 /*FACEBOOK*/
 .facebook{
@@ -82,8 +94,3 @@
 .fb-login-button:hover{
 	transform: scale(1.2);
 }
-
-.material-icons{
-	font-size:20px;
-}
-

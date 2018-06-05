@@ -31,5 +31,12 @@ public class GetNearbiesPlan extends HttpServlet {
 		req.getSession().setAttribute("nearbiesFavorites", nearbiesFavorites);
 	
 	}
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+		req.getRequestDispatcher("writenearbiesonplan.jsp").forward(req,resp);		
+		
+	}
 
 }

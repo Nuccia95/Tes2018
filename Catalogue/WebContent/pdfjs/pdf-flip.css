@@ -20,12 +20,12 @@
 }
 
 #likes .material-icons{
-		color: #001748;
-	font-size:60px;
+	color: #00ff03;
+	font-size:50px;
 }
 
 #likes .material-icons:hover{
-	transform:scale(1.3);
+	transform:scale(1.1);
 }
 
 #likeLeft{

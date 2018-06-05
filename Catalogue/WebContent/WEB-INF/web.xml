@@ -85,6 +85,15 @@
 		<url-pattern>/addNoteToPlan</url-pattern>
 	</servlet-mapping>
 	
+		<servlet>
+		<servlet-name>CleanPlan</servlet-name>
+		<servlet-class>controller.CleanPlan</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CleanPlan</servlet-name>
+		<url-pattern>/cleanPlan</url-pattern>
+	</servlet-mapping>
+	
 	<servlet>
 		<servlet-name>CurrentCategory</servlet-name>
 		<servlet-class>controller.CurrentCategory</servlet-class>
