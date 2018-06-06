@@ -5,8 +5,8 @@ $(document).ready(function() {
 	
 	$('#like').on('click',function(e){
 		var x = document.getElementsByClassName("mySlides");
-		var div = x[slideIndex];
-		var idPlace = $(div).attr('id');
+		var div = x[slideIndex-1];
+		var idPlace = $(div).attr("id");
 		userfavorites.push(idPlace);
 		newNotification("Aggiunto al tuo piano");
 	});

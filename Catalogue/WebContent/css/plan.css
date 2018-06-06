@@ -1,3 +1,12 @@
+body{
+	background:url(../imgs/cover/slide6.jpg);
+}
+
+.line{
+	width:100%;
+	height:60px;
+}
+
 #plan{
 	width:100%;
 	height:800px;
@@ -14,10 +23,11 @@
 }
 
 .description{
+	margin-top:20px;
     font-size:15px;
     letter-spacing: -0.4px;
     color:black;
-    font-style:italic;
+	margin-left:30px;
 }
 
 /* CONTAINER */
@@ -28,31 +38,13 @@
    	background-color:#ffff;
    	left: 50%;
   	margin: -0px 0 0 -400px;
-  	margin-top:20px;  
+  	margin-top:5%;  
   	box-shadow:1px 1px 10px black;
+  	cursor:pointer;
 }
 
 #paper{
 	padding:20px;
-}
-
-.list{
-	list-style:none;
-	letter-spacing:-0.3px;
-	margin:0;
-	padding:5px;
-}
-
-.list li{
-	padding:3px;
-}
-
-.list .delete{
-	color:#c6c6c6;
-}
-
-.list .delete:hover{
-	color:#979696;
 }
 
 .subtitle{
@@ -60,9 +52,6 @@
 	color:#000082;
 }
 
-.description{
-	padding:10px;
-}
 
 #city{
 	font-style:italic;
@@ -71,17 +60,21 @@
 
 
 #pdf{
-	width:150px;
+	position:absolute;
+	cursor:pointer;
+	display:flex;
+	width:170px;
 	margin-left:87%;
 	margin-top:2%;
-	border:1px solid #000095;
-	padding:5px;
+	border-radius:10px;
+	padding:7px;
 	color:#fff;
-	background-color:#001748;
+	background-color:#004db8;
 }
 
 #pdf:hover{
-	transform:scale(0.9);
+	background-color:#006bff;
+	transform:scale(1.08);
 }
 
 .infopanel p{
@@ -94,7 +87,9 @@
 	padding:25px;
 	background-color:#001748;
 	margin:2%;
+	margin-top:5%;
 	border-radius:10px 10px 10px 10px;
+	box-shadow:3px 3px 3px #000;
 }
 
 #info label{
@@ -110,10 +105,102 @@
 	padding:10px;
 }
 
+.form-control{
+	background-color:white;
+	border:none;
+	border-radius:10px;
+	padding-left:30px;
+	text-align:center;
+	color:#a1a1a1;
+}
+
+.form-control:focus{
+  border-color: rgba(221, 255, 215, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(212, 255, 204, 0.6);
+  outline: 0 none;
+}
+
+#categories{
+	border-radius:10px;
+	color:#000000;
+	font-size:15px;
+	letter-spacing:-0.85px;
+}
+
+#categories:focus{
+  border-color: rgba(221, 255, 215, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(212, 255, 204, 0.6);
+  outline: 0 none;
+
+}
+
+
 #submit{
+	display:flex;
 	margin-top:10%;
-	width:100px;
+	margin-left:25%;
+	width:124px;
 	background-color:#004db8;
 	color:#fff;
-	padding:3px;
+	padding:4px;
+	border-radius:10px;
+	cursor:pointer;
+}
+
+#submit:hover{
+	background-color:#006bff;
+	transform:scale(1.08);
+}
+
+
+.delete{
+	color:#e3e3e3;
+	font-size:15px;
+}
+
+.delete{
+	color:gray;
+}
+
+/*range number*/
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 0;
+     background: url('../imgs/logo/inputNumber.png');
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border: 0;
+    background: url('../imgs/logo/inputNumber.png');
+    cursor: pointer;
+}
+
+.slidecontainer p{
+	color:#fff;
 }

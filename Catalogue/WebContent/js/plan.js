@@ -1,7 +1,9 @@
 $(document).ready(function() {
 	getFavorites();
 	getFavoritesNearbies();
-
+	numberPeople("myRangeAdults","demoAdults");
+	numberPeople("myRangeChildren","demoChildren");
+	
 	$('#edit').on('click',function(){
 		$('.editMenu').css('left','0%');
 	});
@@ -10,13 +12,13 @@ $(document).ready(function() {
 	$('#submit').on('click',function(){
 		var checkin = $('#checkin').val();
 		var checkout = $('#checkout').val();
-		var children = $('#children').val();
-		var adults = $('#adults').val();
+		var adults = $('#myRangeAdults').val();
+		var children = $('#myRangeChildren').val();
 		var category = $('#categories').val();
 		var line = "<strong>CheckIn:</strong> "+checkin+" <strong>CheckOut:</strong> "
 		+checkout+"  <strong>Numero Bambini:</strong> "+children+" <strong>Numero Adulti:</strong> "
 		+adults+" <strong>Categoria:</strong> "+category;
-		$('#calendar').append(line);
+		$('#calendar').html(line);
 		
 	});
 	
@@ -61,7 +63,7 @@ function generatePDF() {
         'width': margins.width, // max width of content on PDF
         'elementHandlers': specialElementHandlers
     },
-
+    
     function (dispose) {
         // dispose: object with X, Y of the last line add to the PDF 
         //          this allow the insertion of new lines after html
@@ -96,7 +98,6 @@ function getFavoritesNearbies(){
 		url : "getNearbiesPlan",
 		success : function(data) {	
 			$('#nearbies').html(data);
-			
 			$(".delete").on('click', function(e) {
 				e.stopPropagation();
 				$(this).closest('li').remove();
@@ -109,7 +110,17 @@ function getFavoritesNearbies(){
 	});
 }
 
+function numberPeople(type,demo){
+	var slider = document.getElementById(type);
+	var output = document.getElementById(demo);
+	output.innerHTML = slider.value;
 
+	slider.oninput = function() {
+	  output.innerHTML = this.value;
+	}
+	
+	return output;
+}
 
 
 

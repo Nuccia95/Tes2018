@@ -92,6 +92,7 @@
 
 #notesTable{
 	margin-top:28%;
+	cursor:pointer;
 }
 
 #notesTable td{

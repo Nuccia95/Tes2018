@@ -4,8 +4,6 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <c:forEach var="nearby" items="${nearbiesFavorites}">
-				<li>	
-					<span>${nearby}</span> 					 
-					<span class="float-right delete">x</span>
-				</li>
+				
+				<li><span>${nearby} <span class="delete">x</span></span></li>				 
 </c:forEach>

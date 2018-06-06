@@ -36,8 +36,10 @@ public class GetPlaces extends HttpServlet {
 		for (City city : cities) {
 			List<Place> places = DaoFactory.getInstance().makePlaceDao().getByCityAndCategory(category, city.getName());
 			if(places != null && !places.isEmpty())
-			for (Place place : places)
+			for (Place place : places) {
 				allPlaces.add(place);
+				System.out.println(place.getId()+"-"+place.getName());
+			}
 		}
 		
 		req.getServletContext().setAttribute("allPlaces", allPlaces);

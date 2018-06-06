@@ -23,9 +23,13 @@ public class WriteFavorites extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
+		/* save user's preferences*/
 		String jsonFavorites = req.getParameter("favorites");
 		Gson gson = new Gson();
 		String [] favoriteslist = gson.fromJson(jsonFavorites, String[].class);
+		
+		ArrayList<Place> favoritesPrec = (ArrayList<Place>) req.getSession().getAttribute("favorites");
+		
 		ArrayList<Place> favorites  = new ArrayList<>();
 
 		for (String i : favoriteslist) {
@@ -33,8 +37,14 @@ public class WriteFavorites extends HttpServlet {
 				long id = Long.parseLong(i);
 				Place p = DaoFactory.getInstance().makePlaceDao().getByPrimaryKey(id);
 				favorites.add(p);
+				System.out.println(p.getName());
 			}
 		}
+		
+		/* If there are prec favorites*/
+		if(favoritesPrec!= null && !favoritesPrec.isEmpty())
+			for (Place place : favoritesPrec)
+					favorites.add(place);
 		
 		req.getSession().setAttribute("favorites", favorites);
 	
