@@ -259,6 +259,21 @@
 	text-decoration:none;
 }
 
+#backtocatalogues{
+	color:#fff;
+	margin-top:9px;
+	text-decoration:none;
+	letter-spacing:-0.85!important;
+	margin-left:20px;
+	margin-right:12px;
+}
+
+#backtocatalogues:hover{
+	color:  #fdcd0a;
+	text-decoration:none;
+}
+
+
 #help .material-icons{
 	color:#fff;
 	margin-top:6px;

@@ -53,7 +53,6 @@ $(document).ready(function() {
 	
 	$('#ispirationMenu').on('click',function(){
 		$('#subMenu').css('background-color','#00005b'); 
-		getIspiration();
 	})
 	
 	
@@ -188,22 +187,6 @@ function cleanPlan(){
 	});
 	
 	
-}
-
-
-/* SHOW CATEGORIES */
-function getIspiration() {
-    var x = document.getElementById(".container");
-    var clss = $('#container').attr('class');
-  
-    if(clss === 'checked'){
-    	$('#container').removeClass('checked');
-    	$('#container').css('visibility','hidden'); 
-    }
-    else {
-    	$('#container').addClass('checked');
-    	$('#container').css('visibility','visible'); 
-    }
 }
 
 

@@ -64,6 +64,7 @@ function initialize() {
           pov: {heading: 165, pitch: 0},
           zoom: 1
         });
+
 }
 
 
@@ -115,7 +116,6 @@ function calcDistance(response, status) {
             alert("Something got wrong " + status);
           }
 	});
-    
   }
 }
 
@@ -150,6 +150,23 @@ function deleteOverlays() {
   markersArray = [];
 }
 
+function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+    var start = document.getElementById('source').value;
+    var end = document.getElementById('dest').value;
+    directionsService.route({
+      origin: start,
+      destination: end,
+      travelMode: 'DRIVING'
+    }, function(response, status) {
+      if (status === 'OK') {
+        directionsDisplay.setDirections(response);
+      } else {
+        window.alert('Directions request failed due to ' + status);
+      }
+    });
+  }
+
+
 
 google.maps.event.addDomListener(window, 'load', initialize);
 
@@ -175,6 +192,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
  	
  	<div id="map-canvas"></div>
  	<div id="street-view"></div>
+ 	<div id="right-panel"></div>
 
  	
  <div id="content-pane">

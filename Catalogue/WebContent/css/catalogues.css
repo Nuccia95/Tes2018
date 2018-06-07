@@ -1,8 +1,13 @@
+body{
+	background-image:url(../imgs/cover/slide6.jpg);
+}
 #catalogues img{
-	width:140px;
 	height:200px;	
 	padding: 10px;
 	margin-left:30%;
+	box-shadow:2px 2px 1px #d0d0d0;
+	border-left:2px solid #dfdfdf;
+	border-top:1px solid #f3f0f0;
 }
 
 #catalogues img:hover{
@@ -10,9 +15,40 @@
 }
 
 #gallery{
-	margin-top:10%;
-	margin-left:30%;
+	margin-top:20%;
+	background-color:#dbf1fa7a;
+	width:100%;
+	padding-left:10%;
 }
 
- 
- 
+#gallery td{
+	padding:20px;
+}
+
+#welcomeDescription{
+	display:flex;
+}
+
+#containerDescription{
+	margin-left:4%;
+	position:absolute;
+	margin-top:5.5%;
+}
+
+#containerDescription p{
+	color:#fff;
+	font-family:sans-serif;
+	font-size:28px;
+	letter-spacing:-0.85px;
+	font-weight:lighter;
+}
+
+#shelf{
+	margin-top:10%;
+	position:absolute;
+	width:60%;
+	margin-left:2%;
+	height:1px;
+	background-color:#969696;
+	box-shadow:10px 10px 10px black;
+}

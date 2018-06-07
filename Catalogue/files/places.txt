@@ -12,7 +12,7 @@ Hotel Clelia,HOTEL,San Teodoro,imgs/hotel/hotel12.jpg
 Hotel San Biagio,HOTEL,San Teodoro,imgs/hotel/hotel13.jpg
 Da Zio Mario,RISTORANTI,Alghero,imgs/restaurants/restaurant1.jpg
 La Perla,RISTORANTI,Alghero,imgs/restaurants/restaurant2.jpg
-La Scorpacciata,RISTORANTI,Le Bombarde,imgs/restaurants/restaurant3.jpg
+La Scorpacciata,RISTORANTI,Costa Smeralda,imgs/restaurants/restaurant3.jpg
 Il Lido,RISTORANTI,Costa Smeralda,imgs/restaurants/restaurant4.jpg
 La Fenice,RISTORANTI,Costa Smeralda,imgs/restaurants/restaurant5.jpg
 La regina del porto,RISTORANTI,Porto Cervo,imgs/restaurants/restaurant6.jpg
@@ -20,3 +20,10 @@ Vista Mare,RISTORANTI,Porto Cervo,imgs/restaurants/restaurant7.jpg
 Da Pietro,RISTORANTI,Cagliari,imgs/restaurants/restaurant8.jpg
 La Roccia,RISTORANTI,Capo Caccia,imgs/restaurants/restaurant9.jpg
 Lo Straniero,RISTORANTI,Alghero,imgs/restaurants/restaurant10.jpg
+Rafting,AVVENTURA,Alghero,imgs/adventures/rafting1.jpg
+Boat Trip,AVVENTURA,Porto Cervo,imgs/adventures/boat1.jpg
+Snorkeling,AVVENTURA,Costa Smeralda,imgs/adventures/snorkeling1.jpg
+Bungee jumping-Le Ragnatele,AVVENTURA,Alghero,imgs/adventures/bungee.jpg
+Percorso Escursioni,AVVENTURA,Alghero,imgs/adventures/escursioni.jpg
+Avventure per bambini-Le Ragnatele,AVVENTURA,Alghero,imgs/adventures/ragna.jpg
+Ippico Tour,AVVENTURA,Alghero,imgs/adventures/ippico.jpg
