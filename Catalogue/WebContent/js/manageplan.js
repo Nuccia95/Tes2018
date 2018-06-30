@@ -45,7 +45,8 @@ $(document).ready(function() {
 				window.location.assign("currentcategory.jsp");
 			},
 			error : function(data) {	
-				alert("errore in currentCategory");
+				var message='Seleziona PRIMA la <strong>NOTA</strong> su cui desideri creare il tuo <strong>PIANO</strong>';
+				newNotification(message);
 			}
 		});
 	});
